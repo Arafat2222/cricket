@@ -52,6 +52,21 @@
             transition: border-color 0.3s ease;
         }
 
+        /* New keyframe for logo animation */
+        @keyframes logo-bounce {
+            0%, 100% {
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                transform: scale(1.1) translateY(-10px);
+            }
+        }
+
+        /* Apply the animation to the logo */
+        .animate-logo {
+            animation: logo-bounce 2s ease-in-out infinite;
+        }
+
         /* Add mobile-specific styles */
         @media (max-width: 768px) {
             .container {
@@ -69,23 +84,23 @@
     <div class="container mx-auto px-4 space-y-16">
 
         <!-- Top Navigation -->
-        <nav class="flex flex-col gap-2 md:flex-row justify-between items-center px-2 py-2 border-b border-white/10 bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg">
-            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
+        <nav class="flex justify-between items-center px-2 py-2 border-b border-white/10 bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg">
+            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
                 দেশের গর্ব আমাদের একত্রিত শক্তিতে
             </span>
-            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
+            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
                 নির্ভীক জাতি, শীর্ষে উঠবে
             </span>
         </nav>
 
         <!-- Fixed CTA Button -->
-        <div class="fixed top-20 right-4 z-50">
+        <!-- <div class="fixed top-20 right-4 z-50">
             <a href="https://forms.gle/pRZTUu9GVZtgF6df7" target="_blank">
                 <button class="bg-gradient-to-r from-yellow-500 to-orange-400 text-white px-6 py-3 text-base sm:text-lg font-bold rounded-xl shadow-2xl hover:scale-105 transition-transform backdrop-blur-sm border border-white/10">
                     <span class="animate-pop text-red-500">👉রেজিস্ট্রেশন করুন এখনই</span>
                 </button>
             </a>
-        </div>
+        </div> -->
 
         <!-- Hero Section -->
         <section class="flex flex-col items-center gap-10 px-2">
@@ -98,7 +113,7 @@
                 <div class="w-40 h-40 sm:w-48 sm:h-48 relative floating mx-auto">
                     <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full animate-pulse"></div>
                     <div class="absolute inset-2 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-full overflow-hidden border border-white/30">
-                        <img src="./logo.png" alt="Tournament Logo" class="w-full h-full object-cover scale-110">
+                        <img src="./logo.png" alt="Tournament Logo" class="w-full h-full object-cover scale-110 animate-logo">
                     </div>
                 </div>
                 <p id="countdown" class="text-lg sm:text-xl mt-6 text-yellow-300"></p>
@@ -127,13 +142,13 @@
 
         <!-- CTA Button -->
         <!-- Original CTA Button in main content -->
-        <!-- <section class="text-center">
+        <section class="text-center">
             <a href="https://forms.gle/pRZTUu9GVZtgF6df7" target="_blank">
                 <button class="bg-gradient-to-r from-yellow-500 to-orange-400 text-white px-8 py-4 text-lg sm:text-xl font-bold rounded-xl shadow-lg hover:scale-105 transition-transform">
                     <span class="animate-pop text-red-500">👉 রেজিস্ট্রেশন করুন এখনই</span>
                 </button>
             </a>
-        </section> -->
+        </section>
 
         <!-- Fixed CTA Button -->
         <!-- <div class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-full px-4 md:px-0 md:w-auto">
