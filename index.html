@@ -55,29 +55,20 @@
 </head>
 <body class="min-h-screen text-white py-8">
     <div class="container mx-auto px-4 space-y-16">
-        
+
         <!-- Top Navigation -->
-        <nav class="flex justify-between items-center px-2 py-1 border-b border-white/10 mt-[-20px] relative bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg">
-            <div class="flex items-center gap-4">
-                <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg mt-[-10px]">
-                    দেশের গর্ব আমাদের একত্রিত শক্তিতে
-                </span>
-            </div>
-            <div class="flex items-center gap-4">
-                <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg mt-[-10px]">
-                    নির্ভীক জাতি, শীর্ষে উঠবে
-                </span>
-            </div>
-            
-            <!-- Decorative Shadow Elements -->
-            <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-400 to-transparent"></div>
-            <div class="absolute -bottom-4 -left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-4 -right-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <nav class="flex flex-col gap-2 md:flex-row justify-between items-center px-2 py-2 border-b border-white/10 bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg">
+            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
+                দেশের গর্ব আমাদের একত্রিত শক্তিতে
+            </span>
+            <span class="bg-gradient-to-r from-amber-500/20 to-yellow-300/20 px-4 py-2 rounded-xl text-amber-200 text-sm md:text-base border border-amber-500/30 hover:from-amber-500/30 hover:to-yellow-300/30 transition-all shadow-lg">
+                নির্ভীক জাতি, শীর্ষে উঠবে
+            </span>
         </nav>
 
-        <!-- Hero Section with Info Cards Side by Side -->
-        <section class="flex flex-col md:flex-row justify-between items-center gap-10 px-2">
-            <!-- Date Card with smooth floating vibration -->
+        <!-- Hero Section -->
+        <section class="flex flex-col gap-10 md:flex-row md:justify-between md:items-center px-2">
+            <!-- Date Card -->
             <div class="w-full md:w-1/4">
                 <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 text-center transition-all hover:bg-yellow-500/20 hover:text-yellow-300 hover:shadow-xl cursor-pointer animate-smooth-vibe">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-amber-400/20 to-yellow-300/20 rounded-full p-3 border border-amber-500/30">
@@ -87,27 +78,25 @@
                 </div>
             </div>
 
-
-
-            <!-- Middle: Main Content -->
+            <!-- Middle Content -->
             <div class="w-full md:w-2/4 text-center">
-                <h1 class="mt-6 text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-4 leading-snug break-words">
+                <h1 class="mt-6 text-3xl sm:text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-4 leading-snug">
                     ঈদুল আজহা গেট টুগেদার
                 </h1>
-                <p class="text-2xl md:text-3xl text-blue-200 mb-8">ক্রিকেট টুর্নামেন্ট ২০২৫ (সিজন ২.০)</p>
-                <div class="w-48 h-48 relative floating mx-auto">
+                <p class="text-xl sm:text-2xl md:text-3xl text-blue-200 mb-8">ক্রিকেট টুর্নামেন্ট ২০২৫ (সিজন ২.০)</p>
+                <div class="w-40 h-40 sm:w-48 sm:h-48 relative floating mx-auto">
                     <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full animate-pulse"></div>
                     <div class="absolute inset-2 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-full overflow-hidden border border-white/30">
                         <img src="./logo.png" alt="Tournament Logo" class="w-full h-full object-cover scale-110">
                     </div>
                 </div>
-                <p id="countdown" class="text-xl mt-6 text-yellow-300"></p>
+                <p id="countdown" class="text-lg sm:text-xl mt-6 text-yellow-300"></p>
             </div>
 
-            <!-- Right: Location Card -->
+            <!-- Location Card -->
             <div class="w-full md:w-1/4">
                 <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 text-center transition-all hover:bg-orange-500/20 hover:shadow-xl cursor-pointer animate-smooth-vibe">
-                    <a href="https://www.google.com/maps/dir/23.7608421,90.3601775/Bhutiapara+High+School/" target="https://www.google.com/maps/dir/23.7608421,90.3601775/Bhutiapara+High+School/@24.4561656,88.3123402,8z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x39fc9a0b226a84e1:0xdafffd24344c7f04!2m2!1d88.9386107!2d25.1628088!3e0?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D">
+                    <a href="https://www.google.com/maps/dir/23.7608421,90.3601775/Bhutiapara+High+School/" target="_blank">
                         <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="w-16 h-16 mx-auto mb-4" alt="Location Icon">
                     </a>
                     <p class="text-xl">📍 স্থান: ভুটিয়াপাড়া উচ্চ বিদ্যালয় মাঠ</p>
@@ -117,62 +106,57 @@
 
         <!-- CTA Button -->
         <section class="text-center">
-            <a href="https://forms.gle/pRZTUu9GVZtgF6df7" target="_blank" rel="noopener noreferrer">
-                <button class="bg-gradient-to-r from-yellow-500 to-orange-400 text-white px-10 py-5 text-xl font-bold rounded-xl shadow-lg hover:scale-105 transition-transform">
+            <a href="https://forms.gle/pRZTUu9GVZtgF6df7" target="_blank">
+                <button class="bg-gradient-to-r from-yellow-500 to-orange-400 text-white px-8 py-4 text-lg sm:text-xl font-bold rounded-xl shadow-lg hover:scale-105 transition-transform">
                     <span class="animate-pop text-red-500">👉 রেজিস্ট্রেশন করুন এখনই</span>
                 </button>
             </a>
         </section>
-         <!-- Sponsor Section -->
-        <section class="text-center mt-16 bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
-            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500 mb-4">
+
+        <!-- Sponsor Section -->
+        <section class="text-center mt-16 bg-white/5 backdrop-blur-lg rounded-2xl p-6 sm:p-8 border border-white/10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500 mb-4">
                 Sponsors
             </h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-white/10 p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white/10 p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
                     <img src="https://via.placeholder.com/150x50.png?text=Sponsor+1" class="mx-auto opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor 1">
                 </div>
-                <div class="bg-white/10 p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
+                <div class="bg-white/10 p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
                     <img src="https://via.placeholder.com/150x50.png?text=Sponsor+2" class="mx-auto opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor 2">
                 </div>
-                <div class="bg-white/10 p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
+                <div class="bg-white/10 p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
                     <img src="https://via.placeholder.com/150x50.png?text=Sponsor+3" class="mx-auto opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor 3">
                 </div>
-                <div class="bg-white/10 p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
+                <div class="bg-white/10 p-3 sm:p-4 rounded-xl shadow-md hover:shadow-xl transition-all border border-yellow-400/10">
                     <img src="https://via.placeholder.com/150x50.png?text=Sponsor+4" class="mx-auto opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor 4">
                 </div>
             </div>
-        </section>   
-        <!-- Organizer Section -->
-        <footer class="text-center mt-16 bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg rounded-2xl p-10 border border-white/10 relative overflow-hidden">
-            <!-- Decorative Elements -->
+        </section>
+
+        <!-- Organizer Footer -->
+        <footer class="text-center mt-16 bg-gradient-to-br from-indigo-900/40 to-blue-900/40 backdrop-blur-lg rounded-2xl p-6 sm:p-10 border border-white/10 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
             <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-400 to-transparent"></div>
-            
+
             <div class="relative z-10">
-                <div class="inline-flex items-center gap-4 bg-white/5 px-8 py-3 rounded-full backdrop-blur-sm border border-white/10 mb-6">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" class="w-8 h-8 opacity-90 animate-pulse" alt="Management Icon">
-                    <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400">
+                <div class="inline-flex flex-wrap justify-center items-center gap-4 bg-white/5 px-6 py-2 sm:px-8 sm:py-3 rounded-full backdrop-blur-sm border border-white/10 mb-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" class="w-6 h-6 sm:w-8 sm:h-8 opacity-90 animate-pulse" alt="Management Icon">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400">
                         আয়োজনে
                     </h2>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" class="w-8 h-8 opacity-90 animate-pulse" alt="Management Icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" class="w-6 h-6 sm:w-8 sm:h-8 opacity-90 animate-pulse" alt="Management Icon">
                 </div>
-                
-                <div class="space-y-3">
-                    <p class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-indigo-200 text-transparent bg-clip-text">
+                <div class="space-y-2">
+                    <p class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-200 to-indigo-200 text-transparent bg-clip-text">
                         যুবসমাজ, ভুটিয়াপাড়া ও পার্শ্ববর্তী এলাকা
                     </p>
-                    <p class="text-lg text-blue-300/90 font-medium tracking-wide">
+                    <p class="text-sm sm:text-lg text-blue-300/90 font-medium tracking-wide">
                         চকবরকত, জয়পুরহাট
                     </p>
                 </div>
             </div>
-
-            <!-- Background Decorative Elements -->
-            <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl"></div>
         </footer>
-        
     </div>
 
     <!-- Countdown Script -->
