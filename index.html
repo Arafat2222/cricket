@@ -51,6 +51,18 @@
             animation: smooth-vibe 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
             transition: border-color 0.3s ease;
         }
+
+        /* Add mobile-specific styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            .mobile-card {
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                margin-bottom: 1rem;
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen text-white py-8">
@@ -81,9 +93,9 @@
             <div class="w-full md:w-1/4">
                 <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 text-center transition-all hover:bg-yellow-500/20 hover:text-yellow-300 hover:shadow-xl cursor-pointer animate-smooth-vibe">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-amber-400/20 to-yellow-300/20 rounded-full p-3 border border-amber-500/30">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2886/2886665.png" class="w-full h-full mx-auto filter brightness-200 opacity-80" alt="Date Icon">
+                        <img src="./date.png" class="w-full h-full mx-auto filter brightness-200 opacity-80" alt="Date Icon">
                     </div>
-                    <p class="text-xl">📅 তারিখ: ঈদের দ্বিতীয় দিন</p>
+                    <p class="text-xl">তারিখ: ঈদের দ্বিতীয় দিন</p>
                 </div>
             </div>
 
@@ -108,7 +120,7 @@
                     <a href="https://www.google.com/maps/dir/23.7608421,90.3601775/Bhutiapara+High+School/" target="_blank">
                         <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="w-16 h-16 mx-auto mb-4" alt="Location Icon">
                     </a>
-                    <p class="text-xl">📍 স্থান: ভুটিয়াপাড়া উচ্চ বিদ্যালয় মাঠ</p>
+                    <p class="text-xl"> স্থান: ভুটিয়াপাড়া উচ্চ বিদ্যালয় মাঠ</p>
                 </div>
             </div>
         </section>
